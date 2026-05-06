@@ -126,8 +126,8 @@ Config Reference:
     #define SD_CS     32
 
 Note:
-  • Menggunakan bus SPI yang sama dengan NRF Radio #1 (VSPI).
-  • Pastikan menggunakan tegangan 3.3V untuk menghindari kerusakan kartu.
+  • Uses the same SPI bus as NRF Radio #1 (VSPI).[cite: 3]
+  • Ensure 3.3V voltage is used to avoid card damage.[cite: 3]
 
 
 ─────────────────────────────────────────────────────────────────────────────
