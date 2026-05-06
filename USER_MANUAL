@@ -87,50 +87,20 @@ You can send the following exact text strings via the terminal app:
 Below is the detailed breakdown of the 9 Main Menu options available on the device.
 
 1. WIFI SCAN (MARAUDER SNIFFER)
-   Passively scans the 2.4GHz spectrum to discover Access Points (APs) and Clients.
-   It sorts them by Signal Strength (RSSI). Use this to identify targets before 
-   launching an attack.
 
 2. WIFI ANALYZER
-   Displays a real-time graphical representation of channel congestion (Channels 1-13).
-   Highly useful for finding the least crowded channel or observing the noise floor 
-   created by other devices.
 
 3. WIFI JAMMER (DEAUTH & DISASSOC)
-   Forces devices to disconnect from their WiFi networks.
-   • Targeted: Select a specific AP or Client from the scan list to disconnect them.
-   • Sweep Mode (Area Denial): Rapidly hops through all channels broadcasting 
-     deauthentication frames, effectively disabling 2.4GHz WiFi in the immediate area.
-   *Uses multi-reason burst logic (0x02, 0x08, 0x0A) for maximum disruption.*
 
-4. EVIL TWIN (FAKE AP + CAPTIVE PORTAL)
-   Clones a legitimate WiFi network or creates a highly enticing open network.
-   When victims connect, their internet is blocked, and they are forced into a 
-   Captive Portal (Login Page). If they type their credentials, Evil Cozmo logs 
-   the username and password, displaying it on the OLED and via Bluetooth Serial.
+4. EVIL TWIN 
 
 5. BEACON SPAM
-   Floods the airwaves with hundreds of fake WiFi network names (SSIDs) per second.
-   This can crash or confuse the WiFi connection menus of nearby smartphones and 
-   laptops. You can choose to generate random names or specific wordlists.
 
 6. PMKID CAPTURE
-   A passive attack targeting WPA2 networks. It listens for the EAPOL 4-way handshake
-   or PMKID hashes when a legitimate user connects to an AP. Captured hashes can later 
-   be saved to the SD Card to be cracked offline using Hashcat or John the Ripper.
 
 7. NRF JAMMER (REQUIRES NRF24L01+ MODULE)
-   Utilizes the external NRF module to attack non-WiFi 2.4GHz protocols.
-   • Bluetooth Jammer: Disrupts Bluetooth audio, smartwatches, and BLE trackers.
-   • Drone Jammer: Floods the ISM band commonly used by toy drones and RC cars.
-   • Multi-Channel: Uses dual NRF radios (if installed) to coordinate a wider 
-     spectrum denial attack.
 
 8. MOUSEJACK (KEYSTROKE INJECTION)
-   Exploits vulnerabilities in specific 2.4GHz wireless mice and keyboards 
-   (e.g., older Logitech Unifying, Microsoft, Dell). It allows you to wirelessly 
-   inject malicious keystrokes directly into the victim's computer as if you were 
-   typing on their keyboard.
 
 9. SETTINGS
    Configure the hardware behavior:
