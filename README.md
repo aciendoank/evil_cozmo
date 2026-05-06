@@ -9,7 +9,7 @@ ESP32-based multi-functional penetration testing tool featuring:
   • WiFi Scanning & Network Analysis (Marauder Sniffer)
   • Advanced WiFi Deauth Jammer (Burst Mode: Deauth + Disassoc)
   • Area Denial (Channel Sweep Attack)
-  • Evil Twin (Fake AP) with Captive Portal
+  • Evil Twin
   • Beacon Spam Attack
   • BLE Device Spam
   • NRF24L01+ Multi-Mode Jammer (Bluetooth, Drone, WiFi, Multi-Channel)
