@@ -623,6 +623,27 @@ Community:
 
 
 ================================================================================
+                        SUPPORT & DONATION
+================================================================================
+
+If you find this project useful, educational, or if it helped you in your
+security research, consider supporting its continued development! 
+
+Hardware hacking requires constant purchasing of new modules, antennas, 
+and microcontrollers. Your donations will directly fund the research and 
+development of future EVIL COZMO updates and features.
+
+You can support the developer by sending crypto to the addresses below:
+
+  • Bitcoin (BTC)  : 181uDqPnzmH15V59E9UKRRLeEfuCsvRGqD
+  
+  • Binance (BNB)  : 0x78872f62f5870bf5d22e683a213a77f09198b377 
+                     *(Please ensure it is sent via BSC / BEP-20 Network)*
+
+Thank you for keeping the open-source hardware hacking community alive!
+
+
+================================================================================
 
 END OF DOCUMENTATION
 
@@ -632,3 +653,6 @@ repository or documentation files included with this release.
 Questions? Check troubleshooting section or consult library documentation.
 
 ================================================================================
+
+
+
