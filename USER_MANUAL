@@ -41,6 +41,31 @@ OPTION B: USING ESPTOOL.PY (LINUX / MACOS / WINDOWS CLI)
   4. Flash the binary:
      `esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x10000 EvilCozmo_v10.bin`
 
+OPTION C: FLASHING WITH 3 FILES (ARDUINO IDE COMPILED BINARIES)
+  If your ESP32 is completely blank or you compiled the project yourself using 
+  the Arduino IDE, you must flash three separate files instead of a single binary 
+  to ensure the device boots correctly.
+
+  USING ESPRESSIF FLASH DOWNLOAD TOOL:
+  1. Open the tool and select:
+     - Chip Type: ESP32
+     - Work Mode: Develop
+  2. In the main window, check three boxes and select your specific files.
+  3. Set the offset addresses next to each file exactly as follows:
+     - `...bootloader.bin`   ->  Address: `0x1000`
+     - `...partitions.bin`   ->  Address: `0x8000`
+     - `...nav_smart_v10.ino.bin` (Main App) -> Address: `0x10000`
+  4. Set SPI SPEED to `40MHz`, SPI MODE to `DIO`, and FLASH SIZE to `32Mbit` (4MB).
+  5. Select your COM Port at the bottom and set BAUD to `115200`.
+  6. Click "START". Wait for the "FINISH" prompt. 
+     *(Note: You may need to hold the 'BOOT' button on your ESP32 when it says "SYNC").*
+
+  USING ESPTOOL.PY (CLI):
+  1. Open your terminal/command prompt.
+  2. Erase the flash first (Recommended):
+     `esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash`
+  3. Flash all three binaries at their respective addresses:
+     `esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 ...bootloader.bin 0x8000 ...partitions.bin 0x10000 ...nav_smart_v10.ino.bin`
 
 ================================================================================
                        PART 2: HARDWARE NAVIGATION
